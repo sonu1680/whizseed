@@ -13,35 +13,35 @@ import { Typewriter, useTypewriter,Cursor } from "react-simple-typewriter";
 const Home = () => {
   const data = [
     {
-      image: "../assets/gst.png",
+      image: "../assets/images/gst.png",
       title: "GST Registration",
     },
     {
-      image: "../assets/msme.png",
+      image: "../assets/images/images/msme.png",
       title: "MSME Registration",
     },
     {
-      image: "../assets/llp.png",
+      image: "../assets/images/llp.png",
       title: "LLP Registration Online",
     },
     {
-      image: "../assets/cfo.png",
+      image: "../assets/images/cfo.png",
       title: "Virtual CFO Service",
     },
     {
-      image: "../assets/company.png",
+      image: "../assets/images/company.png",
       title: "Company Registration",
     },
     {
-      image: "../assets/gst.png",
+      image: "../assets/images/gst.png",
       title: "FSSAI License",
     },
     {
-      image: "../assets/gst.png",
+      image: "../assets/images/gst.png",
       title: "NBFC Takeover",
     },
     {
-      image: "../assets/gst.png",
+      image: "../assets/images/gst.png",
       title: "EPR Authorization",
     },
   ];
@@ -117,7 +117,7 @@ const{texts}=useTypewriter({
                 </button>
               </label>
               <img
-                src="../assets/userslist.png"
+                src="../assets/images/userslist.png"
                 className="h-[40px] w-[220px] rounded-xl mt-[-20px] "
                 alt=""
               />
@@ -163,7 +163,7 @@ const{texts}=useTypewriter({
           <Marquee speed={400}>
             <img
               className="h-32 w-full rounded-3xl "
-              src="../assets/companyLogos.png"
+              src="../assets/images/companyLogos.png"
               alt=""
             />
           </Marquee>
@@ -225,7 +225,7 @@ const{texts}=useTypewriter({
                 to our customers:
               </span>
               <img
-                src="../assets/features.png"
+                src="../assets/images/features.png"
                 alt=""
                 className="w-[500px] h-32"
               />
@@ -235,7 +235,7 @@ const{texts}=useTypewriter({
               <div className="box h-[400px] w-[550px] bg-white  rounded-3xl p-6 flex flex-col  gap-y-14 shadow-md shadow-gray-400 hover:shadow-[rgba(0,0,255,0.1)_0px_10px_1px_0px]   ">
                 <div className="title flex flex-row  h-8 w-full justify-start ">
                   <img
-                    src="../assets/correct.png"
+                    src="../assets/images/correct.png"
                     alt=""
                     className="h-4 w-4 mt-2"
                   />
@@ -251,7 +251,7 @@ const{texts}=useTypewriter({
 
                 <div className="title flex flex-row  h-8 w-full justify-start ">
                   <img
-                    src="../assets/correct.png"
+                    src="../assets/images/correct.png"
                     alt=""
                     className="h-4 w-4 mt-2"
                   />
@@ -267,7 +267,7 @@ const{texts}=useTypewriter({
 
                 <div className="title flex flex-row  h-8 w-full justify-start  ">
                   <img
-                    src="../assets/correct.png"
+                    src="../assets/images/correct.png"
                     alt=""
                     className="h-4 w-4 mt-2"
                   />
@@ -283,7 +283,7 @@ const{texts}=useTypewriter({
 
                 <div className="title flex flex-row  h-8 w-full justify-start  ">
                   <img
-                    src="../assets/correct.png"
+                    src="../assets/images/correct.png"
                     alt=""
                     className="h-4 w-4 mt-2"
                   />
@@ -306,7 +306,7 @@ const{texts}=useTypewriter({
         <section className=" flex justify-center w-full items-center bg-white flex-col ">
           <div className="container h-[450px] w-11/12  mt-10 rounded-3xl p-6 ">
             <img
-              src="../assets/global.png"
+              src="../assets/images/global.png"
               alt=""
               className="w-full h-full rounded-3xl "
             />
@@ -323,7 +323,7 @@ const{texts}=useTypewriter({
             </div>
             <div className="right   flex justify-center items-center w-1/2 ">
               <img
-                src="../assets/girl.png"
+                src="../assets/images/girl.png"
                 alt=""
                 className="h-[150px] w-[160px]"
               />
@@ -351,14 +351,14 @@ const{texts}=useTypewriter({
                       Sonu Pandit
                     </p>
                     <img
-                      src="../assets/rating.png"
+                      src="../assets/images/rating.png"
                       alt=""
                       className="w-32 h-32 mt-[-50px]"
                     />
                   </div>
                   <div className="mt-3">
                     <img
-                      src="../assets/google.png"
+                      src="../assets/images/google.png"
                       alt=""
                       className="w-8 h-8"
                     />
@@ -392,7 +392,7 @@ const{texts}=useTypewriter({
           <div className="newsletter   w-11/12 h-[30vh] flex flex-row  justify-between px-8 mt-24">
             <div className="left w-1/2 flex justify-center items-center   ">
               <img
-                src="../assets/newsletter.png"
+                src="../assets/images/newsletter.png"
                 alt=""
                 className="h-[100px] w-[500px]"
               />
