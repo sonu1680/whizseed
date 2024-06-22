@@ -15,7 +15,7 @@ import OtherServices from "../../components/otherServices";
 import Faq from "../../components/faq";
 import Consult from "../../components/consult";
 
-const Services = () => {
+const About = () => {
   return (
     <>
       <div className="flex bg-white h-[100%] w-full justify-center items-center flex-col ">
@@ -273,15 +273,14 @@ const Services = () => {
           </div>
         </section>
 
-        <section className="h-[195vh]  " >
-
-        <CompanyMarquee />
-        <Review/>
-        <NewsLetter/>
+        <section className="h-[195vh]  ">
+          <CompanyMarquee />
+          <Review />
+          <NewsLetter />
         </section>
       </div>
     </>
   );
 };
 
-export default Services;
+export default About;
