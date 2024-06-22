@@ -351,7 +351,7 @@ const{texts}=useTypewriter({
                       Sonu Pandit
                     </p>
                     <img
-                      src="../assets/images/rating.png"
+                      src="images/rating.png"
                       alt=""
                       className="w-32 h-32 mt-[-50px]"
                     />
