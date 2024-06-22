@@ -175,7 +175,7 @@ const Footer = () => {
             <nav>
               <div className="grid grid-flow-col gap-4">
                 <a>
-                    <img src="../assets/images/payments.png" alt="" />
+                    <img src="/images/payments.png" alt="" />
                  </a>
               </div>
             </nav>

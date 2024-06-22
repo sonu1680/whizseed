@@ -1,7 +1,7 @@
 import React from "react";
-import logo from "../assets/images/logo.png";
-import phone from "../assets/images/phone.png";
-import whatsapp from "../assets/images/whatsapp.png";
+import logo from "/images/logo.png";
+import phone from "/images/phone.png";
+import whatsapp from "/images/whatsapp.png";
 import { NavLink } from "react-router-dom";
 
 const Navbar=() =>{
