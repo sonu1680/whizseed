@@ -17,7 +17,7 @@ const Home = () => {
       title: "GST Registration",
     },
     {
-      image: "/images/images/msme.png",
+      image: "images/msme.png",
       title: "MSME Registration",
     },
     {
