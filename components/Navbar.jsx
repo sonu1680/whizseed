@@ -1,12 +1,13 @@
 import React from "react";
 import logo from "/images/logo.png";
-import phone from "/images/phone.png";
-import whatsapp from "/images/whatsapp.png";
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar=() =>{
   return (
-    <div className="navbar bg-white shadow-xl fixed ">
+    <div className="navbar bg-white shadow-xl fixed z-40">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -69,16 +70,23 @@ const Navbar=() =>{
           </li>
         </ul>
       </div>
-      <div className="navbar-end gap-4  ">
-        <a className="btn rounded-full bg-green-600 text-white  ">
-          {" "}
-          <img src={whatsapp} alt="" className="w-6 h-6 " />
-          Whatsapp
+      <div className="navbar-end gap-4  outline-none ">
+        <a className="btn group rounded-full bg-green-600 text-white w-32 hover:bg-green-600  border-none ">
+          <FontAwesomeIcon
+            icon={faWhatsapp}
+            className="h-5 w-5  transition ease-in-out delay-100  group-hover:translate-x-1 group-hover:scale-125  duration-300 "
+          />
+          <p className="transition ease-in-out delay-100  group-hover:translate-x-1   duration-300">
+            Whatsapp
+          </p>
         </a>
-        <a className="btn rounded-full bg-blue-600 text-white ">
-          {" "}
-          <img src={phone} alt="" className="w-6 h-6 " />
-          9895845869
+        <a className="btn group rounded-full bg-blue-600 text-white border-2 border-blue-600  w-32 p-0 hover:bg-transparent hover:border-blue-600  transition ease-in-out delay-50 ">
+          <FontAwesomeIcon
+            icon={faPhone}
+            className="h-4 w-4  transition ease-in-out delay-50     duration-300 group-hover:text-blue-600"
+          />
+
+          <p className="text-sm  group-hover:text-blue-600">9895845869</p>
         </a>
       </div>
     </div>

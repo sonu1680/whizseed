@@ -4,11 +4,14 @@ import {
   faMagnifyingGlass,
   faArrowRight,
   faCircleArrowRight,
-  faArrowAltCircleRight,
-  faCircleArrowLeft,
+  faBuilding,
+  faUsersRays,
 } from "@fortawesome/free-solid-svg-icons";
-import Marquee from "react-fast-marquee";
-import { Typewriter, useTypewriter,Cursor } from "react-simple-typewriter";
+import { Typewriter, useTypewriter, Cursor } from "react-simple-typewriter";
+import NewsLetter from "../../components/newsLetter";
+import Review from "../../components/review";
+import CompanyMarquee from "../../components/companyMarque";
+import OtherServices from "../../components/otherServices";
 
 const Home = () => {
   const data = [
@@ -46,42 +49,9 @@ const Home = () => {
     },
   ];
 
-
-
-
-   const reviewData = [
-     {
-       title: "Sonu Pandit",
-     },
-
-     {
-       title: "Sonu Pandit",
-     },
-     {
-       title: "Sonu Pandit",
-     },
-     {
-       title: "Sonu Pandit",
-     },
-     {
-       title: "Sonu Pandit",
-     },
-     {
-       title: "Sonu Pandit",
-     },
-   ];
-
-const{texts}=useTypewriter({
-    words:["sonu","kumar"],
-    loop:{},
-    typeSpeed:120,
-    deleteSpeed:80
-
-})
-
   return (
     <>
-      <div className="flex bg-white h-[100%] w-full justify-center items-center flex-col">
+      <div className="flex bg-white h-[100%] w-full justify-center items-center flex-col p-0">
         <section className="h-[500px] w-11/12 bg-blue-50 mt-36 rounded-xl flex flex-row justify-between items-center  p-12 ">
           <div className="left ">
             <div>
@@ -94,14 +64,22 @@ const{texts}=useTypewriter({
               <p className="text-4xl font-medium text-gray-500">
                 {
                   <Typewriter
-                    words={["LLP Registration", "Limited Company", "Trademark Assignment", "GST Registration","Partnership Firm Registration","EPR Authorization","Start Compliance Service","Limited Company"]}
+                    words={[
+                      "LLP Registration",
+                      "Limited Company",
+                      "Trademark Assignment",
+                      "GST Registration",
+                      "Partnership Firm Registration",
+                      "EPR Authorization",
+                      "Start Compliance Service",
+                      "Limited Company",
+                    ]}
                     loop={5}
                     cursor
                     cursorStyle="|"
                     typeSpeed={70}
                     deleteSpeed={100}
                     delaySpeed={400}
-                   
                   />
                 }
               </p>
@@ -125,26 +103,7 @@ const{texts}=useTypewriter({
                 Trusted by 6400+ studets, including designers from:
               </p>
 
-              <div className="service mt-4 flex flex-row gap-2">
-                <div className="one  w-max p-2  flex  rounded-full justify-center items-center border border-black text-black font-inter text-sm font-medium hover:border-blue-300 hover:bg-blue-300 ">
-                  Start compliance Services
-                </div>
-                <div className="one  w-max p-2  flex  rounded-full justify-center items-center border border-black text-black font-inter text-sm font-medium hover:border-blue-300 hover:bg-blue-300 ">
-                  Privated Limited
-                </div>
-                <div className="one  w-max p-2  flex  rounded-full justify-center items-center border border-black text-black font-inter text-sm font-medium hover:border-blue-300 hover:bg-blue-300 ">
-                  Start My Bussiness
-                </div>
-              </div>
-
-              <div className="service mt-4 flex flex-row gap-2">
-                <div className="one  w-max p-2  flex  rounded-full justify-center items-center border border-black text-black font-inter text-sm font-medium hover:border-blue-300 hover:bg-blue-300 ">
-                  TradeMark Assignment
-                </div>
-                <div className="one  w-max p-2  flex  rounded-full justify-center items-center border border-black text-black font-inter text-sm font-medium hover:border-blue-300 hover:bg-blue-300 ">
-                  Company Registration
-                </div>
-              </div>
+              <OtherServices />
             </div>
           </div>
 
@@ -156,18 +115,43 @@ const{texts}=useTypewriter({
               src="https://images.pexels.com/photos/1367276/pexels-photo-1367276.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt=""
             />
+
+            <div className="mover   w-44 h-14 relative bg-white rounded-full flex justify-center items-center animate-moving bottom-6 left-20">
+              <div className="left w-1/2 h-12 flex justify-center items-center ">
+                <div className="bg-blue-600 rounded-full p-2 px-2.5">
+                  <FontAwesomeIcon
+                    icon={faUsersRays}
+                    className="w-6 h-6 text-white"
+                  />
+                </div>
+              </div>
+              <div className="right w-full">
+                <p className="font-inter font-semibold">100+</p>
+                <p className="text-black font-inter font-semibold">
+                  CA & Lawyer
+                </p>
+              </div>
+            </div>
+
+            <div className="mover w-44 h-14 relative bg-white rounded-full flex justify-center items-center animate-moving bottom-56 left-[80%]">
+              <div className="left w-1/2 h-12 flex justify-center items-center ">
+                <div className="bg-blue-600 rounded-full p-2 px-2.5">
+                  <FontAwesomeIcon
+                    icon={faBuilding}
+                    className="w-6 h-6 text-white"
+                  />
+                </div>
+              </div>
+              <div className="right w-full">
+                <p className="font-inter font-semibold">10+</p>
+                <p className="text-black font-inter font-semibold">Offices</p>
+              </div>
+            </div>
           </div>
         </section>
 
-        <section className="h-40 w-full px-14  flex justify-center items-center rounded">
-          <Marquee speed={400}>
-            <img
-              className="h-32 w-full rounded-3xl "
-              src="/images/companyLogos.png"
-              alt=""
-            />
-          </Marquee>
-        </section>
+        {/* ////////////////////////////////////////////////// */}
+        <CompanyMarquee />
         {/* 
 ///////////////////////////////////////// */}
 
@@ -193,12 +177,12 @@ const{texts}=useTypewriter({
                   />
                 </div>
               ))}
-              <div className=" group box bg-white w-60 h-20 flex flex-row  justify-center items-center rounded-lg gap-3 pl-3 bg-transparent border-2 border-white hover:bg-blue-950 transition ease-in delay-20 ">
+              <div className=" group box  w-60 h-20 flex flex-row  justify-center items-center rounded-lg gap-3 pl-3 bg-transparent border-2 border-white hover:bg-blue-950 transition ease-in delay-20 ">
                 <FontAwesomeIcon
                   icon={faCircleArrowRight}
                   className="h-8 w-8 group-hover:h-10 group-hover:w-10 "
                 />
-                <p className="text-white text-medium font-inter font ">
+                <p className="text-white text-medium font-inter font  ">
                   See All Services
                 </p>
               </div>
@@ -331,86 +315,13 @@ const{texts}=useTypewriter({
           </div>
         </section>
 
-        {/* 
-///////////////////////////// */}
+        {/* //////////     Review    /////////////////// */}
 
-        <section className=" flex justify-center w-full h-[130vh] items-center  flex-col ">
-          <div className="review mt-48 ">
-            <div className="heading text-black font-inter font-bold text-5xl text-center ">
-              Here's what our amazing <br />{" "}
-              <span className="text-blue-600">clients</span> are saying
-            </div>
-          </div>
+        <Review />
 
-          <div className="container h-[120vh] w-11/12  mt-10 rounded-3xl p-6  flex flex-row  flex-wrap gap-8 px-20">
-            {reviewData.map((item) => (
-              <div className="reviewbox w-96 h-96 bg-gray-100 rounded-2xl p-2 ">
-                <div className="heading w-full h-20 flex flex-row justify-between p-2  ">
-                  <div className="flex flex-col justify-center items-center mt-10 ">
-                    <p className="text-lg font-semibold text-black">
-                      Sonu Pandit
-                    </p>
-                    <img
-                      src="images/rating.png"
-                      alt=""
-                      className="w-32 h-32 mt-[-50px]"
-                    />
-                  </div>
-                  <div className="mt-3">
-                    <img
-                      src="/images/google.png"
-                      alt=""
-                      className="w-8 h-8"
-                    />
-                  </div>
-                </div>
-                <p className="px-4 text-black font-inter text-md ">
-                  Recently, I partnered with a friend to launch our business,
-                  and we needed help registering it as a Partnership Firm.
-                  Whizseed made the entire process incredibly smooth. They were
-                  professional, efficient, and made a potentially complex
-                  process very manageable.
-                </p>
-              </div>
-            ))}
-          </div>
-          <div className="button flex gap-6 ">
-            <FontAwesomeIcon
-              icon={faCircleArrowLeft}
-              className="h-8 w-8  hover:text-blue-600 "
-            />
-            <FontAwesomeIcon
-              icon={faCircleArrowRight}
-              className="h-8 w-8  hover:text-blue-600 "
-            />
-          </div>
-        </section>
-        {/* 
-////////////////////////////////////////////////// */}
+        {/* //////////////////////  Newsletter  ////////////////////////// */}
 
-        <section className=" flex justify-center w-full h-[50vh] items-center  ">
-          <div className="newsletter   w-11/12 h-[30vh] flex flex-row  justify-between px-8 mt-24">
-            <div className="left w-1/2 flex justify-center items-center   ">
-              <img
-                src="/images/newsletter.png"
-                alt=""
-                className="h-[100px] w-[500px]"
-              />
-            </div>
-            <div className="right w-1/2  flex justify-center items-center">
-              <label className="input  flex items-center w-[550px] h-[60px] my-8 rounded-full bg-white border border-black">
-                <input
-                  type="text"
-                  className=" bg-white grow flex flex-row pl-2 shadow-2xl "
-                  placeholder="Enter your email address"
-                />
-                <button className="bg-blue-800 w-[140px] h-[40px] rounded-full text-white font-inter mr-[-6px] ">
-                  subscribe <FontAwesomeIcon icon={faArrowRight} />
-                </button>
-              </label>
-            </div>
-          </div>
-        </section>
+        <NewsLetter />
       </div>
     </>
   );

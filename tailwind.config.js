@@ -7,6 +7,16 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        moving: {
+          "0% ,100%": { transform: "translateY(40%)" },
+
+          "50%": { transform: "translateY(-40%)" },
+        },
+      },
+      animation: {
+        moving: "moving 8s ease-in-out infinite",
+      },
       colors: {
         primary: "#ffffff",
       },
@@ -17,4 +27,3 @@ export default {
   },
   plugins: [require("daisyui")],
 };
-

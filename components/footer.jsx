@@ -1,6 +1,5 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faX } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
   faInstagramSquare,
@@ -92,7 +91,7 @@ const Footer = () => {
             <p className="text-white font-semibold font-inter ">
               Starting a Business:
             </p>
-            <p classNmae="text-sm">
+            <p className="text-sm">
               Starting a business is exciting undertaking filled with
               possibilities. It is a chance to live your passion makes it into a
               profitable venture giving a meaningful impact. With the right
@@ -108,7 +107,7 @@ const Footer = () => {
             <p className="text-white font-semibold font-inter ">
               Intellectual Property Rights :
             </p>
-            <p classNmae="text-sm">
+            <p className="text-sm">
               Intellectual Property rights have an important role in protecting
               innovation, creativity, promoting competition, and maintaining
               economic prosperity. It is important to understand that the
@@ -123,7 +122,7 @@ const Footer = () => {
             <p className="text-white font-semibold font-inter ">
               Legal Documentation :
             </p>
-            <p classNmae="text-sm">
+            <p className="text-sm">
               It is compulsory to have proper legal documentation especially
               when starting and operating a business. Legal documentation helps
               establish the legal framework, rights, and responsibilities of the
@@ -139,7 +138,7 @@ const Footer = () => {
             <p className="text-white font-semibold font-inter ">
               Mandatory Compliance :
             </p>
-            <p classNmae="text-sm">
+            <p className="text-sm">
               Mandatory compliance refers to the legal obligations and
               requirements that businesses must fulfil in order to operate
               within the boundaries set by regulations, laws, and governing
@@ -155,7 +154,7 @@ const Footer = () => {
             <p className="text-white font-semibold font-inter ">
               Need for Lawyers :
             </p>
-            <p classNmae="text-sm">
+            <p className="text-sm">
               Businesses must comply with various laws and regulations at the
               local, state, and national levels. Lawyers help businesses
               understand and navigate the legal requirements specific to their
@@ -170,16 +169,16 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="copyright">
+        <div className="copyright pt-24">
           <footer className="footer footer-center w-full text-primary-content">
             <nav>
               <div className="grid grid-flow-col gap-4">
                 <a>
-                    <img src="/images/payments.png" alt="" />
+                    <img src="/images/payments.png" alt=" " className="w-[350px]"  />
                  </a>
               </div>
             </nav>
-            <aside>
+            <aside className="mt-[-20px]" >
               <p className=" text-white font-normal">
                 By continuing this page, you agree to our{" "}
                 <span className="text-yellow-400">
