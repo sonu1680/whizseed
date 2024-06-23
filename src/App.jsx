@@ -8,6 +8,7 @@ import About from "../src/pages/About"
 import Services from "./pages/Services"
 import Contact from "./pages/contact";
 import Refer from "./pages/Refer";
+import Partner from "./pages/Partner";
 const App = () => {
   return (
     <>
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/Licence" element={<About />} />
           <Route path="/Tax" element={<Contact />} />
           <Route path="/Regulatory" element={<Refer />} />
+          <Route path="/Environmental" element={<Partner />} />
         </Routes>
         <Footer />
       </BrowserRouter>
