@@ -6,6 +6,9 @@ import {
   faCircleArrowRight,
   faBuilding,
   faUsersRays,
+  faFileContract,
+  faHandHoldingDollar,
+  faPhoneVolume
 } from "@fortawesome/free-solid-svg-icons";
 import { Typewriter, useTypewriter, Cursor } from "react-simple-typewriter";
 import NewsLetter from "../../components/newsLetter";
@@ -14,6 +17,25 @@ import CompanyMarquee from "../../components/companyMarque";
 import OtherServices from "../../components/otherServices";
 import Faq from "../../components/faq";
 import Consult from "../../components/consult";
+
+const data = [
+  {
+    title: "India's No.1 Legal Platform",
+    desc: "Get the leagl consilt from us free of cost. Get the leagl consilt from us free of cost.",
+    icon: faFileContract,
+  },
+  {
+    title: "Get Legal Advice",
+    desc: "Get the leagl consilt from us free of cost. Get the leagl consilt from us free of cost.",
+    icon: faHandHoldingDollar,
+  },
+  ,
+  {
+    title: "Contact a Lawyer",
+    desc: "Get the leagl consilt from us free of cost. Get the leagl consilt from us free of cost.",
+    icon: faPhoneVolume,
+  },
+];
 
 const About = () => {
   return (
@@ -84,12 +106,50 @@ const About = () => {
                 iure enim dolorem nihil molestiae doloribus quod vel maxime
                 eaque eius autem illum incidunt tenetur officia modi?
               </p>
-
-            
             </div>
             <div className="right w-5/12   flex flex-col  justify-center items-center ">
-             <img src="/images/about.png" alt="" className="rounded-xl h-[500px] w-full" />
-            
+              <img
+                src="/images/about.png"
+                alt=""
+                className="rounded-xl h-[500px] w-full"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section className="h-[120vh] w-full   hero flex flex-col justify-start items-center p-0   ">
+          <p className="text-4xl text-black font-inter font-bold text-center">
+            {" "}
+            50,000+ People Choose{" "}
+            <span className="text-blue-600">WHIZSEED</span> for their Legal{" "}
+            <br />
+            Solutions.
+          </p>
+          <div className="cotainer w-11/12 bg-blue-700 h-2/4 rounded-3xl flex justify-evenly items-center mt-10  px-10">
+            {data.map((item, index) => (
+              <div
+                className="one bg-white w-[27%] h-48 rounded-xl "
+                key={index}
+              >
+                <div className="title flex flex-row justify-start items-center p-6 w-80">
+                  <FontAwesomeIcon
+                    icon={item.icon}
+                    className="text-blue-600 w-8 h-8 "
+                  />
+                  <p className="pl-4 text-black font-inter font-semibold text-lg ">
+                    {item.title}
+                  </p>
+                </div>
+                <p className="pl-6  text-black font-inter font-normal">
+                  {item.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+          <div className="container w-11/12  ">
+            <div className="box flex flex-row justify-start items-start  w-[53%]">
+
+            <Faq />
             </div>
           </div>
         </section>
