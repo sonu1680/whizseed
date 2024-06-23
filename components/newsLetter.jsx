@@ -13,7 +13,7 @@ import {
 const NewsLetter = () => {
   return (
     
-      <section className=" flex justify-center w-full h-[50vh] items-center  ">
+      <section className=" flex justify-center w-full h-[45vh] items-center  ">
         <div className="newsletter   w-11/12 h-[30vh] flex flex-row  justify-between px-8 mt-24">
           <div className="left w-1/2 flex justify-center items-center   ">
             <img
@@ -29,7 +29,7 @@ const NewsLetter = () => {
                 className=" bg-white grow flex flex-row pl-2 shadow-2xl "
                 placeholder="Enter your email address"
               />
-              <button className="bg-blue-800 w-[140px] h-[40px] rounded-full text-white font-inter mr-[-6px] ">
+              <button className="bg-blue-800 w-[140px] btn h-[40px] rounded-full text-white font-inter mr-[-6px] ">
                 subscribe <FontAwesomeIcon icon={faArrowRight} />
               </button>
             </label>

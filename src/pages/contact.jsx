@@ -91,7 +91,7 @@ const Contact = () => {
         </section>
 
         <section className=" flex justify-center items-center w-full bg-white">
-          <div className="containers flex flex-row justify-center items-start w-11/12 h-[100vh] bg-gray-700 mt-16 rounded-2xl  ">
+          <div className="containers flex flex-row justify-center items-start w-11/12 h-[100vh]  mt-16 rounded-2xl  ">
             <div className="left flex flex-col w-1/2 justify-center items-start  px-20 gap-16">
               <span className="flex flex-row">
                 <p className="text-3xl font-inter font-semibold text-blue-600 ">
@@ -191,15 +191,19 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="right w-1/2 flex bg-red-400  justify-center items-center ">
-              <div className="box h-[95vh] w-full bg-black  rounded-3xl p-6 flex flex-col  gap-y-14 shadow-md shadow-gray-400 hover:shadow-[rgba(0,0,255,0.1)_0px_10px_1px_0px]   ">
-                <p>Get in Touch</p>
+            <div className="right w-1/2 flex  justify-center items-center p-2 ">
+              <div className="box h-[105vh] w-full bg-white border border-black  rounded-3xl p-6 flex flex-col  gap-y-8 shadow-md shadow-gray-400 hover:shadow-[rgba(0,0,255,0.1)_0px_10px_1px_0px]   ">
+                <p className="text-center text-2xl text-blue-600 font-inter font-semibold">
+                  Get in Touch
+                </p>
 
-                <label className="form-control w-full max-w-xs">
+                <label className="form-control w-full ">
                   <div className="label">
-                    <span className="label-text">Select Your Service</span>
+                    <span className="label-text text-bold text-xl font-semibold text-black ">
+                      Select Your Service
+                    </span>
                   </div>
-                  <select className="select select-bordered">
+                  <select className="select select-bordered bg-blue-50 ">
                     <option disabled selected>
                       Select Your Service
                     </option>
@@ -211,29 +215,82 @@ const Contact = () => {
                   </select>
                 </label>
 
-                <div className="container flex flex-col  ">
-                  <div className="innerContainer flex flex-row ">
-                    <label className="form-control w-full max-w-xs">
+                <div className="container flex flex-col gap-4  ">
+                  <div className="innerContainer flex flex-row gap-6 ">
+                    <label className="form-control w-full md:max-w-xs">
                       <div className="label">
-                        <span className="label-text">What is your name?</span>
-                        
+                        <span className="label-text font-inter font-semibold text-xl text-black ">
+                          *Full Name
+                        </span>
                       </div>
                       <input
                         type="text"
-                        placeholder="Type here"
-                        className="input input-bordered w-full max-w-xs"
+                        placeholder="What is your name"
+                        className="input input-bordered w-full max-w-xs bg-blue-50 "
                       />
-                      
+                    </label>
+                    <label className="form-control w-full md:max-w-xs">
+                      <div className="label">
+                        <span className="label-text font-inter font-semibold text-xl text-black">
+                          *Enter Address
+                        </span>
+                      </div>
+                      <input
+                        type="text"
+                        placeholder="yourname@gmail.com"
+                        className="input bg-blue-50 input-bordered w-full max-w-xs"
+                      />
                     </label>
                   </div>
-                  <div className="innerContainer2 flex flex-row"></div>
+                  <div className="innerContainer2 flex flex-row gap-6 ">
+                    <label className="form-control w-full max-w-xs ">
+                      <div className="label">
+                        <span className="label-text font-inter font-semibold text-xl text-black">
+                          *Mobile Number
+                        </span>
+                      </div>
+                      <input
+                        type="text"
+                        placeholder="Enter Your Mobile Number"
+                        className="input input-bordered w-full bg-blue-50 max-w-xs"
+                      />
+                    </label>
+                    <label className="form-control w-full ">
+                      <div className="label">
+                        <span className="label-text text-bold text-xl font-semibold text-black ">
+                          *Select State
+                        </span>
+                      </div>
+                      <select className="select select-bordered bg-blue-50 ">
+                        <option disabled selected>
+                          Select Your State
+                        </option>
+                        <option>Gujarat</option>
+                        <option>Rajasthan</option>
+                      </select>
+                    </label>
+                  </div>
+                  <label className="form-control">
+                    <div className="label">
+                      <span className="label-text font-inter font-semibold text-xl text-black">
+                        How can we help you?
+                      </span>
+                    </div>
+                    <textarea
+                      className="textarea bg-blue-50 textarea-bordered h-32"
+                      placeholder="Type Your Query Here..."
+                    ></textarea>
+                  </label>
+                  <button className="btn w-full h-16 text-lg font-medium rounded-full bg-blue-600 mt-6 text-white ">
+                    Send Request
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className=" ">
+        <section className="w-full  h-[40vh] mt-14   ">
           <NewsLetter />
         </section>
       </div>

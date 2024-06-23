@@ -46,8 +46,8 @@ const Review = () => {
         </div>
 
         <div className="container h-[120vh] w-11/12  mt-10 rounded-3xl p-6  flex flex-row  flex-wrap gap-8 px-20">
-          {reviewData.map((item) => (
-            <div className="reviewbox w-96 h-96 bg-gray-100 rounded-2xl p-2 ">
+          {reviewData.map((item,index) => (
+            <div className="reviewbox w-96 h-96 bg-gray-100 rounded-2xl p-2 " key={index} >
               <div className="heading w-full h-20 flex flex-row justify-between p-2  ">
                 <div className="flex flex-col justify-center items-center mt-10 ">
                   <p className="text-lg font-semibold text-black">
