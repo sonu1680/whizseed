@@ -51,7 +51,7 @@ const Navbar=() =>{
           <img src={logo} alt="logo" className="h-12 w-24" />{" "}
         </NavLink>
       </div>
-      <div className="navbar-center hidden lg:flex   "  >
+      <div className="navbar-center hidden lg:flex  ">
         <ul className="menu menu-horizontal px-1 text-black font-semibold text-xl gap-5 ">
           <li>
             <NavLink to="/Start-Up">Start-Up</NavLink>
@@ -70,8 +70,8 @@ const Navbar=() =>{
           </li>
         </ul>
       </div>
-      <div className="navbar-end gap-4  outline-none ">
-        <a className="btn group rounded-full bg-green-600 text-white w-32 hover:bg-green-600  border-none ">
+      <div className="navbar-end gap-4  outline-none  ">
+        <a className="btn group rounded-full hidden lg:inline-flex bg-green-600 text-white w-32 hover:bg-green-600  border-none ">
           <FontAwesomeIcon
             icon={faWhatsapp}
             className="h-5 w-5  transition ease-in-out delay-100  group-hover:translate-x-1 group-hover:scale-125  duration-300 "
@@ -80,13 +80,25 @@ const Navbar=() =>{
             Whatsapp
           </p>
         </a>
-        <a className="btn group rounded-full bg-blue-600 text-white border-2 border-blue-600  w-32 p-0 hover:bg-transparent hover:border-blue-600  transition ease-in-out delay-50 ">
+        <a className="btn group rounded-full hidden lg:inline-flex  bg-blue-600 text-white border-2 border-blue-600  w-32 p-0 hover:bg-transparent hover:border-blue-600  transition ease-in-out delay-50  ">
           <FontAwesomeIcon
             icon={faPhone}
             className="h-4 w-4  transition ease-in-out delay-50     duration-300 group-hover:text-blue-600"
           />
-
           <p className="text-sm  group-hover:text-blue-600">9895845869</p>
+        </a>
+
+        <a className="btn group rounded-full  bg-green-600  text-white inline-flex lg:hidden hover:bg-green-600  border-none ">
+          <FontAwesomeIcon
+            icon={faWhatsapp}
+            className="h-5 w-5  transition ease-in-out delay-100  group-hover:translate-x-1 group-hover:scale-125  duration-300 "
+          />
+        </a>
+        <a className="btn group rounded-full  inline-flex lg:hidden   bg-blue-600 text-white border-2 border-blue-600    hover:bg-transparent hover:border-blue-600  transition ease-in-out delay-50  ">
+          <FontAwesomeIcon
+            icon={faPhone}
+            className="h-4 w-4  transition ease-in-out delay-50     duration-300 group-hover:text-blue-600"
+          />
         </a>
       </div>
     </div>

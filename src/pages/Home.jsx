@@ -133,7 +133,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="mover w-44 h-14 relative bg-white rounded-full flex justify-center items-center animate-moving bottom-56 left-[80%]">
+            <div className="mover w-44 h-14 relative hidden lg:inline-flex bg-white rounded-full  justify-center items-center animate-moving bottom-56 left-[80%]">
               <div className="left w-1/2 h-12 flex justify-center items-center ">
                 <div className="bg-blue-600 rounded-full p-2 px-2.5">
                   <FontAwesomeIcon
@@ -157,7 +157,7 @@ const Home = () => {
 
         <section className=" flex justify-center items-center bg-white">
           <div className="container justify-between items-center flex bg-blue-600 rounded-2xl h-80 w-11/12 ">
-            <p className="text-5xl font-inter text-white font-semibold pl-20 ">
+            <p className="text-3xl sm:text-5xl font-inter text-white font-semibold pl-20 ">
               We Provide Best <br /> Quality Services
             </p>
 
@@ -195,7 +195,7 @@ const Home = () => {
         {/*         
 ////////////////////////////////////////////////////////// */}
 
-        <section className=" flex justify-center items-center bg-white">
+        <section className=" flex justify-center w-full items-center bg-white">
           <div className="containers flex flex-row justify-center items-center w-11/12 h-[450px] bg-gray-100 mt-16 rounded-2xl ">
             <div className="left flex flex-col w-1/2 justify-center items-center  px-20  ">
               <span className="flex flex-row">
@@ -218,7 +218,7 @@ const Home = () => {
               />
             </div>
 
-            <div className="right w-1/2 flex   justify-center items-center ">
+            <div className="right w-1/2 flex    justify-center items-center ">
               <div className="box h-[400px] w-[550px] bg-white  rounded-3xl p-6 flex flex-col  gap-y-14 shadow-md shadow-gray-400 hover:shadow-[rgba(0,0,255,0.1)_0px_10px_1px_0px]   ">
                 <div className="title flex flex-row  h-8 w-full justify-start ">
                   <img
