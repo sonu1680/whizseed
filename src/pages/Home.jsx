@@ -51,7 +51,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="flex bg-white h-[100%] w-full justify-center items-center flex-col p-0">
+      <div className="flex bg-white h-[100%] w-full justify-center items-center flex-col p-0 min-w-[1000px] ">
         <section className="h-[500px] w-11/12 bg-blue-50 mt-36 rounded-xl flex flex-row justify-between items-center  p-12 ">
           <div className="left ">
             <div>
@@ -162,8 +162,11 @@ const Home = () => {
             </p>
 
             <div className="innerBox flex flex-wrap gap-4 w-7/12  px-2 ">
-              {data.map((item) => (
-                <div className=" group box bg-white w-60 h-20 flex flex-row font-semibold justify-between items-center rounded-lg  pl-3 border-2 border-white hover:bg-transparent  transition ease-in-out delay-10 ">
+              {data.map((item, index) => (
+                <div
+                  className=" group box bg-white w-60 h-20 flex flex-row font-semibold justify-between items-center rounded-lg  pl-3 border-2 border-white hover:bg-transparent  transition ease-in-out delay-10 "
+                  key={index}
+                >
                   <div className="flex flex-row justify-center items-center gap-1">
                     <img src={item.image} alt="" className="h-10 w-10" />
                     <p className="text-black text-sm font-inter ">

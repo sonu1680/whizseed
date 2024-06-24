@@ -13,7 +13,7 @@ import {
 const Footer = () => {
   return (
     <>
-      <footer className="footer items-center  bg-blue-800 text-neutral-content flex flex-col pb-8  ">
+      <footer className="footer items-center  bg-blue-800 text-neutral-content flex flex-col pb-8 min-w-[1000px]  ">
         <div className="top w-full  flex justify-between items-center h-[40px] bg-blue-900 px-20 ">
           <aside className="items-center grid-flow-col ">
             <div className="flex flex-row gap-12 font-semibold ">

@@ -7,8 +7,8 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar=() =>{
   return (
-    <div className="navbar bg-white shadow-xl fixed z-40">
-      <div className="navbar-start">
+    <div className="navbar bg-white shadow-xl fixed z-40  ">
+      <div className="navbar-start  bg-white ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -51,7 +51,7 @@ const Navbar=() =>{
           <img src={logo} alt="logo" className="h-12 w-24" />{" "}
         </NavLink>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden lg:flex   "  >
         <ul className="menu menu-horizontal px-1 text-black font-semibold text-xl gap-5 ">
           <li>
             <NavLink to="/Start-Up">Start-Up</NavLink>
