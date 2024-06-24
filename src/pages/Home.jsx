@@ -157,14 +157,14 @@ const Home = () => {
 
         <section className=" flex justify-center items-center bg-white">
           <div className="container justify-between items-center flex bg-blue-600 rounded-2xl h-80 w-11/12 ">
-            <p className="text-3xl sm:text-5xl font-inter text-white font-semibold pl-20 ">
+            <p className="text-3xl sm:text-5xl font-inter text-white font-semibold pl-20  ">
               We Provide Best <br /> Quality Services
             </p>
 
-            <div className="innerBox flex flex-wrap gap-4 w-7/12  px-2 ">
+            <div className="innerBox flex flex-wrap gap-4  h-80 flex-1 px-2 overflow-auto py-4 justify-center ">
               {data.map((item, index) => (
                 <div
-                  className=" group box bg-white w-60 h-20 flex flex-row font-semibold justify-between items-center rounded-lg  pl-3 border-2 border-white hover:bg-transparent  transition ease-in-out delay-10 "
+                  className=" group box bg-white w-60 h-20 flex flex-row font-semibold justify-between items-center rounded-lg  pl-3 border-2 border-white hover:bg-transparent  transition ease-in-out delay-10  "
                   key={index}
                 >
                   <div className="flex flex-row justify-center items-center gap-1">
@@ -198,14 +198,14 @@ const Home = () => {
         <section className=" flex justify-center w-full items-center bg-white">
           <div className="containers flex flex-row justify-center items-center w-11/12 h-[450px] bg-gray-100 mt-16 rounded-2xl ">
             <div className="left flex flex-col w-1/2 justify-center items-center  px-20  ">
-              <span className="flex flex-row">
-                <p className="text-5xl font-inter font-bold text-black ">
-                  Why Choose
+              <div className="flex flex-row text-center ">
+                <p className="text-4xl md:text-5xl font-inter font-bold text-black ">
+                  Why Choose?
+                  <p className="md:text-5xl text-4xl font-inter font-bold text-blue-600 ">
+                    Whizseed
+                  </p>
                 </p>
-                <p className="text-5xl font-inter font-bold text-blue-600 ">
-                  Whizseed
-                </p>
-              </span>
+              </div>
               <span className="font-inter font-normal text-sm text-left  text-black mt-8">
                 WHIZSEED is a technology-driven platform which provides
                 professional service in India. We strive to provide best service

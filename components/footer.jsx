@@ -42,7 +42,7 @@ const Footer = () => {
           </nav>
         </div>
 
-        <div className="bottom  w-full footer grid-rows-1  bg-blue-800 text-neutral-content px-20 ">
+        <div className="bottom  w-full footer flex  lg:grid lg:grid-rows-1 lg:gap-10 justify-between  bg-blue-800 text-neutral-content px-20 gap-10  ">
           <nav>
             <h6 className="footer-title text-yellow-400">START A BUSINESS</h6>
             <a className="link link-hover">Private Limited Company</a>
@@ -174,18 +174,24 @@ const Footer = () => {
             <nav>
               <div className="grid grid-flow-col gap-4">
                 <a>
-                    <img src="/images/payments.png" alt=" " className="w-[350px]"  />
-                 </a>
+                  <img
+                    src="/images/payments.png"
+                    alt=" "
+                    className="w-[350px]"
+                  />
+                </a>
               </div>
             </nav>
-            <aside className="mt-[-20px]" >
+            <aside className="mt-[-20px]">
               <p className=" text-white font-normal">
                 By continuing this page, you agree to our{" "}
                 <span className="text-yellow-400">
                   Terms & Conditions. Privacy Policy and Return Policy.
                 </span>
               </p>
-              <p className="text-white">All Rights Reserverd © Whizseed, 2024</p>
+              <p className="text-white">
+                All Rights Reserverd © Whizseed, 2024
+              </p>
             </aside>
           </footer>
         </div>
