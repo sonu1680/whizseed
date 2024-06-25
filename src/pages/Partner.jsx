@@ -21,7 +21,7 @@ import NewsLetter from "../../components/newsLetter";
 
 const Partner = () => {
   return (
-    <div className="flex bg-white h-[100%] w-full justify-center items-center flex-col ">
+    <div className="flex bg-white h-[100%] w-full justify-center items-center flex-col  min-w-[1000px]  ">
       <section
         className="h-[50vh] w-full bg-blue-500  hero flex flex-row justify-between items-center  mt-20  "
         style={{
@@ -39,7 +39,7 @@ const Partner = () => {
       </section>
 
       <section className=" flex justify-center items-center w-full ">
-        <div className="containers flex flex-row justify-center items-start w-3/4 h-[100vh] p-6 bg-white border-2 border-black mt-16 rounded-2xl  relative bottom-48">
+        <div className="containers flex flex-row justify-center items-start w-[90%] h-[100vh] p-6 bg-white border-2 border-black mt-16 rounded-2xl  relative bottom-48">
           <div className="left flex flex-col w-1/2 h-full justify-center items-center ">
             <div className="box flex  flex-col justify-center items-center ">
               <p className="text-xl font-inter font-semibold text-blue-600 ">
@@ -62,8 +62,8 @@ const Partner = () => {
             </div>
           </div>
 
-          <div className="right w-[45%] flex  justify-center items-center p-2 ">
-            <div className="box h-[90vh] w-full bg-white border   rounded-3xl p-6 flex flex-col  gap-y-8 shadow-md shadow-gray-400    ">
+          <div className="right w-[45%] flex  justify-center items-center pb-6 ">
+            <div className="box h-[100%] w-full bg-white border   rounded-3xl p-6 flex flex-col  gap-y-8 shadow-md shadow-gray-400    ">
               <div className="container flex flex-col   ">
                 <label className="form-control w-full ">
                   <div className="label">
