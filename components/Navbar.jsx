@@ -28,21 +28,21 @@ const Navbar=() =>{
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-lg dropdown-content mt-3 z-[1] p-2 shadow bg-blue-600 rounded-box w-96 h-[100vh]"
+            className="menu menu-lg dropdown-content mt-3 z-[1] p-2 shadow bg-blue-600 rounded-box w-96 h-30 flex gap-2 "
           >
-            <li>
+            <li className="  shadow-xl ">
               <NavLink to="/Start-Up">Start-Up</NavLink>
             </li>
-            <li>
+            <li className="  shadow-xl ">
               <NavLink to="/Licence">Licence</NavLink>
             </li>
-            <li>
+            <li className="  shadow-xl ">
               <NavLink to="/Tax">Tax</NavLink>
             </li>
-            <li>
+            <li className="  shadow-xl ">
               <NavLink to="/Regulatory">Regulatory</NavLink>
             </li>
-            <li>
+            <li className="  shadow-xl ">
               <NavLink to="/Environmental">Environmental</NavLink>
             </li>
           </ul>
