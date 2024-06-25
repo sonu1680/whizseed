@@ -21,7 +21,7 @@ import NewsLetter from "../../components/newsLetter";
 
 const Refer = () => {
   return (
-    <div className="flex bg-white h-[100%] w-full justify-center items-center flex-col ">
+    <div className="flex bg-white h-[100%] w-full justify-center items-center flex-col min-w-[1000px] ">
       <section
         className="h-[50vh] w-full bg-blue-500  hero flex flex-row justify-between items-center  mt-20  "
         style={{
@@ -39,7 +39,7 @@ const Refer = () => {
       </section>
 
       <section className=" flex justify-center items-center w-full ">
-        <div className="containers flex flex-row justify-center items-start w-3/4 h-[120vh] p-6 bg-white border-2 border-black mt-16 rounded-2xl  relative bottom-48">
+        <div className="containers flex flex-row justify-center items-start lg:w-3/4 w-[95%] h-[100%]  p-6 bg-white border-2 border-black mt-16 rounded-2xl  relative bottom-48">
           <div className="left flex flex-col w-1/2 justify-center items-start px-10   gap-10">
             <div className="box flex gap-2 flex-col ">
               <p className="text-xl font-inter font-semibold text-black ">
@@ -56,7 +56,7 @@ const Refer = () => {
               </p>
             </div>
 
-            <div className="container w-full bg-blue-50 h-20 flex flex-row justify-start items-start rounded  ">
+            <div className="container w-full bg-blue-50 h-full flex flex-row justify-start items-start rounded  ">
               <div className="left  ">
                 <div className="icon rounded-full flex text-center bg-blue-100 justify-center items-center h-20 w-20">
                   <FontAwesomeIcon
@@ -67,7 +67,7 @@ const Refer = () => {
               </div>
 
               <div className="right">
-                <div className="container flex flex-col pl-4 ">
+                <div className="container flex flex-col pl-4 flex-1 ">
                   <p className="text-2xl text-blue-600 font-inter font-semibold">
                     Share Link
                   </p>
@@ -78,7 +78,7 @@ const Refer = () => {
                 </div>
               </div>
             </div>
-            <div className="container w-full bg-blue-50 h-20 flex flex-row justify-start items-start rounded  ">
+            <div className="container w-full bg-blue-50 h-full flex flex-row justify-start items-start rounded  ">
               <div className="left  ">
                 <div className="icon rounded-full flex text-center bg-blue-100 justify-center items-center h-20 w-20">
                   <FontAwesomeIcon
@@ -100,7 +100,7 @@ const Refer = () => {
                 </div>
               </div>
             </div>
-            <div className="container w-full bg-blue-50 h-20 flex flex-row justify-start items-start rounded  ">
+            <div className="container w-full bg-blue-50 h-full flex flex-row justify-start items-start rounded  ">
               <div className="left  ">
                 <div className="icon rounded-full flex text-center bg-blue-100 justify-center items-center h-20 w-20">
                   <FontAwesomeIcon
@@ -128,7 +128,7 @@ const Refer = () => {
           </div>
 
           <div className="right w-[45%] flex  justify-center items-center p-2 ">
-            <div className="box h-[105vh] w-full bg-white border   rounded-3xl p-6 flex flex-col  gap-y-8 shadow-md shadow-gray-400    ">
+            <div className="box h-[100%] w-full bg-white border   rounded-3xl p-6 flex flex-col  gap-y-8 shadow-md shadow-gray-400    ">
               <p className="text-center text-lg text-black font-inter font-semibold">
                 Enter Your Basic details to generate your unique referal link
               </p>
