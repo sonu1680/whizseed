@@ -16,18 +16,18 @@ const Review = () => {
   ];
 
   return (
-    <section className="flex justify-center w-full min-h-screen items-center flex-col  ">
-      <div className="review mt-20 md:mt-24">
+    <section className="flex justify-start w-full md:min-h-screen items-center flex-col   mt-16 h-[100%] pb-10 ">
+      <div className="review ">
         <div className="heading text-black font-inter font-bold text-4xl md:text-5xl text-center">
           Here's what our amazing <br />
           <span className="text-blue-600">clients</span> are saying
         </div>
       </div>
 
-      <div className="container w-11/12 mt-10 rounded-3xl p-6  flex flex-col md:flex-row justify-center items-center flex-wrap gap-8 px-4 md:px-20">
+      <div className="container w-11/12 mt-10 rounded-3xl p-6   flex flex-col md:flex-row justify-center items-center flex-wrap gap-8 px-4 md:px-20">
         {reviewData.map((item, index) => (
           <div
-            className="reviewbox w-auto lg:w-96 lg:h-80 h-96 bg-gray-100 rounded-2xl p-2  hidden md:inline-block "
+            className="reviewbox w-auto lg:w-96 lg:h-80 h-96 bg-gray-100 rounded-2xl p-2  hidden md:inline-block shadow-2xl "
             key={index}
           >
             <div className="heading w-full h-20 flex flex-row justify-between p-2">
@@ -54,7 +54,7 @@ const Review = () => {
 
         {/* /////////revie for mobile view in coursel form//// */}
 
-        <div className="carousel carousel-center  rounded-box w-full h-full space-x-4 p-4 md:hidden bg-white ">
+        <div className="carousel carousel-center  rounded-box w-full h-full space-x-4 p-4 md:hidden bg-white shadow-xl ">
           {reviewData.map((item, index) => (
             <div className="carousel-item h-80 w-full bg-white flex flex-col ">
               <div className="heading w-full h-20 flex flex-row justify-between p-2 bg-white ">

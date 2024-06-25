@@ -22,7 +22,7 @@ const Faq = () => {
     },
   ];
   return (
-    <div className="container  w-full mt-16 gap-5 flex flex-col">
+    <div className="container  w-full  mt-16 gap-5 flex flex-col">
       <p className="text-bold text-black font-bold text-3xl" >Frequently Asked Questions</p>
 
       {data.map((item,index) => (

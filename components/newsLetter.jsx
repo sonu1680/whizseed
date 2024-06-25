@@ -13,8 +13,8 @@ import {
 const NewsLetter = () => {
   return (
     
-      <section className=" flex justify-center w-full h-[45vh] items-center  ">
-        <div className="newsletter   w-11/12 h-[30vh] flex flex-row  justify-between px-8 mt-24">
+      <section className=" flex justify-center w-full h-[100%] items-center  py-10 ">
+        <div className="newsletter   w-11/12 h-[100%] flex flex-row  justify-between items-start px-6 gap-6 ">
           <div className="left w-1/2 flex justify-center items-center   ">
             <img
               src="/images/newsletter.png"

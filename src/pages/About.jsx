@@ -40,7 +40,7 @@ const data = [
 const About = () => {
   return (
     <>
-      <div className="flex bg-white h-[100%] w-full justify-center items-center flex-col ">
+      <div className="flex bg-white h-[100%] w-full justify-center items-center flex-col min-w-[1000px] ">
         <section
           className="h-[50vh] w-full bg-blue-500  hero flex flex-row justify-between items-center  mt-20  "
           style={{
@@ -63,11 +63,11 @@ const About = () => {
 
         {/* ///////////////////////////////////////////////////////////////// */}
 
-        <section className="h-[120vh] w-full   hero flex flex-row justify-start items-start   ">
+        <section className="h-[100%] w-full bg-white  hero flex flex-row justify-start items-start py-10   ">
           <div className="container flex justify-between items-center flex-row px-10 mt-10">
-            <div className="left w-7/12 pr-20 ">
+            <div className="left w-full md:w-7/12  md:pr-20 ">
               <h1 className="text-blue-600 font-inter font-semibold text-3xl">
-                Abouts US
+                Abouts Us
               </h1>
               <p className="text-black font-inter mt-4 text-lg">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -107,7 +107,7 @@ const About = () => {
                 eaque eius autem illum incidunt tenetur officia modi?
               </p>
             </div>
-            <div className="right w-5/12   flex flex-col  justify-center items-center ">
+            <div className="right bg-green-800  w-5/12 aspect-video flex-col hidden md:inline-flex justify-center items-center ">
               <img
                 src="/images/about.png"
                 alt=""
@@ -117,7 +117,15 @@ const About = () => {
           </div>
         </section>
 
-        <section className="h-[120vh] w-full   hero flex flex-col justify-start items-center p-0   ">
+        <div className="   md:hidden my-10 w-3/4 ">
+          <img
+            src="/images/about.png"
+            alt=""
+            className="rounded-xl h-[500px] w-full"
+          />
+        </div>
+
+        <section className="h-[100%] w-full  hero flex flex-col justify-start items-center p-0   ">
           <p className="text-4xl text-black font-inter font-bold text-center">
             {" "}
             50,000+ People Choose{" "}
@@ -125,10 +133,10 @@ const About = () => {
             <br />
             Solutions.
           </p>
-          <div className="cotainer w-11/12 bg-blue-700 h-2/4 rounded-3xl flex justify-evenly items-center mt-10  px-10">
+          <div className="cotainer w-11/12 bg-blue-700 h-full py-2 rounded-3xl flex flex-wrap justify-evenly items-center mt-10  px-10">
             {data.map((item, index) => (
               <div
-                className="one bg-white w-[27%] h-48 rounded-xl "
+                className="one bg-white   w-96 md:w-[27%] h-48  rounded-xl mt-4 "
                 key={index}
               >
                 <div className="title flex flex-row justify-start items-center p-6 w-80">
@@ -146,19 +154,19 @@ const About = () => {
               </div>
             ))}
           </div>
-          <div className="container w-11/12  ">
-            <div className="box flex flex-row justify-start items-start  w-[53%]">
-
-            <Faq />
+          <div className="container w-11/12  py-10  ">
+            <div className="box flex flex-row px-16 md:px-0  md:w-[53%] w-full h-[100%]   md:justify-start md:items-start ">
+              <Faq />
             </div>
           </div>
         </section>
 
-        <section className="h-[195vh]  ">
+        <section className="h-full  ">
           <CompanyMarquee />
           <Review />
           <NewsLetter />
         </section>
+
       </div>
     </>
   );
