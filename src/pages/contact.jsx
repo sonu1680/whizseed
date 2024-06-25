@@ -44,7 +44,7 @@ const data = [
 const Contact = () => {
   return (
     <>
-      <div className="flex bg-white h-[100%] w-full justify-center items-center flex-col ">
+      <div className="flex bg-white h-[100%] w-full justify-center items-center flex-col min-w-[1000px]  ">
         <section
           className="h-[50vh] w-full bg-blue-500  hero flex flex-row justify-between items-center  mt-20  "
           style={{
@@ -90,9 +90,9 @@ const Contact = () => {
           </div>
         </section>
 
-        <section className=" flex justify-center items-center w-full bg-white">
-          <div className="containers flex flex-row justify-center items-start w-11/12 h-[100vh]  mt-16 rounded-2xl  ">
-            <div className="left flex flex-col w-1/2 justify-center items-start  px-20 gap-16">
+        <section className=" flex justify-center items-center w-full h-[100%] py-10 ">
+          <div className="containers flex flex-row justify-center items-start w-11/12 h-full py-10   mt-16 rounded-2xl  ">
+            <div className="left flex flex-col w-1/2 justify-center items-start  px-4 sm:px-20  gap-16">
               <span className="flex flex-row">
                 <p className="text-3xl font-inter font-semibold text-blue-600 ">
                   Get in Touch With us
@@ -104,7 +104,7 @@ const Contact = () => {
                 to our customers:
               </p>
 
-              <div className="container w-full bg-blue-50 h-20 flex flex-row justify-start items-start rounded  ">
+              <div className="container w-full bg-blue-50 h-[100%] flex flex-row justify-start items-start rounded  ">
                 <div className="left  ">
                   <div className="icon rounded-full flex text-center bg-blue-100 justify-center items-center h-20 w-20">
                     <FontAwesomeIcon
@@ -115,7 +115,7 @@ const Contact = () => {
                 </div>
 
                 <div className="right">
-                  <div className="container flex flex-col pl-4 ">
+                  <div className="container flex flex-col pl-4  ">
                     <p className="text-2xl text-black font-inter font-semibold">
                       Head Offices
                     </p>
@@ -137,7 +137,7 @@ const Contact = () => {
                 </div>
 
                 <div className="right">
-                  <div className="container flex flex-col pl-4 gap-4 ">
+                  <div className="container flex flex-col pl-4 gap-4 h-[100%] ">
                     <p className="text-2xl text-black font-inter font-semibold">
                       For Quick Inquiries
                     </p>
@@ -163,7 +163,7 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-              <div className="container w-full bg-blue-50 h-20 flex flex-row justify-start items-start rounded  ">
+              <div className="container w-full bg-blue-50 h-[100%] flex flex-row justify-start items-start rounded  ">
                 <div className="left  ">
                   <div className="icon rounded-full flex text-center bg-blue-100 justify-center items-center h-20 w-20">
                     <FontAwesomeIcon
@@ -192,7 +192,7 @@ const Contact = () => {
             </div>
 
             <div className="right w-1/2 flex  justify-center items-center p-2 ">
-              <div className="box h-[105vh] w-full bg-white border border-black  rounded-3xl p-6 flex flex-col  gap-y-8 shadow-md shadow-gray-400 hover:shadow-[rgba(0,0,255,0.1)_0px_10px_1px_0px]   ">
+              <div className="box h-full w-full bg-white border border-black  rounded-3xl p-6 flex flex-col  gap-y-8 shadow-md shadow-gray-400 hover:shadow-[rgba(0,0,255,0.1)_0px_10px_1px_0px]   ">
                 <p className="text-center text-2xl text-blue-600 font-inter font-semibold">
                   Get in Touch
                 </p>
