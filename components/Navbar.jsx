@@ -28,22 +28,22 @@ const Navbar=() =>{
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-lg dropdown-content mt-3 z-[1] p-2 shadow bg-blue-600 rounded-box w-96 h-[100vh]"
           >
             <li>
-              <NavLink>Start-Up</NavLink>
+              <NavLink to="/Start-Up">Start-Up</NavLink>
             </li>
             <li>
-              <NavLink>Licence</NavLink>
+              <NavLink to="/Licence">Licence</NavLink>
             </li>
             <li>
-              <NavLink>Tax</NavLink>
+              <NavLink to="/Tax">Tax</NavLink>
             </li>
             <li>
-              <NavLink>Regulatory</NavLink>
+              <NavLink to="/Regulatory">Regulatory</NavLink>
             </li>
             <li>
-              <NavLink>Environmental</NavLink>
+              <NavLink to="/Environmental">Environmental</NavLink>
             </li>
           </ul>
         </div>
