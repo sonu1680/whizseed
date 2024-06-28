@@ -7,7 +7,7 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar=() =>{
   return (
-    <div className="navbar bg-white shadow-xl fixed z-40  ">
+    <div className="navbar bg-white shadow-xl fixed z-40   ">
       <div className="navbar-start  bg-white ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

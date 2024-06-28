@@ -51,7 +51,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="flex bg-white h-[100%] w-full justify-center items-center flex-col p-0 min-w-[1000px] ">
+      <div className="flex bg-white h-[100%] w-full justify-center items-center flex-col p-0 min-w-full">
         <section className="h-[500px] w-11/12 bg-blue-50 mt-36 rounded-xl flex flex-row justify-between items-center  p-12 ">
           <div className="left ">
             <div>
