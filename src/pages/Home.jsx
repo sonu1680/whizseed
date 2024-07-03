@@ -24,7 +24,7 @@ const Home = () => {
       title: "MSME Registration",
     },
     {
-      image: "/images/llp.png",
+      image: "/images/llpRegistration.png",
       title: "LLP Registration Online",
     },
     {
@@ -36,23 +36,21 @@ const Home = () => {
       title: "Company Registration",
     },
     {
-      image: "/images/gst.png",
+      image: "/images/fssi.png",
       title: "FSSAI License",
     },
     {
-      image: "/images/gst.png",
+      image: "/images/nbfc.png",
       title: "NBFC Takeover",
     },
     {
-      image: "/images/gst.png",
+      image: "/images/epr.png",
       title: "EPR Authorization",
     },
   ];
- return (
+  return (
     <>
-      <div className="flex bg-white h-[100%] w-full justify-center items-center flex-col p-0 lg:min-w-[1000px] ">
-
-</div>
+      <div className="flex bg-white h-[100%] w-full justify-center items-center flex-col p-0 lg:min-w-[1000px] "></div>
       <div className="flex bg-white h-[100%] w-full justify-center items-center flex-col p-0 min-w-[1000px] ">
         <section className="h-[500px] w-11/12 bg-blue-50 mt-36 rounded-xl flex flex-row justify-between items-center  p-12 ">
           <div className="left ">
@@ -85,15 +83,20 @@ const Home = () => {
                   />
                 }
               </p>
-              <label className="input input-bordered flex items-center w-[550px] h-[50px] my-8 rounded-full bg-white shadow-2xl ">
+              <label className="input input-bordered flex items-center w-[550px] h-[58px] my-8 rounded-full bg-white shadow-2xl ">
                 <FontAwesomeIcon icon={faMagnifyingGlass} />
                 <input
                   type="text"
                   className=" bg-white grow flex flex-row pl-2 shadow-2xl"
                   placeholder="Go for service..."
                 />
-                <button className="bg-blue-800 w-[140px] h-[40px] rounded-full text-white font-inter mr-[-6px] ">
-                  Go fro service <FontAwesomeIcon icon={faArrowRight} />
+                <button className="bg-blue-800 w-[150px] h-[40px] rounded-full text-white font-inter mr-[-6px] flex justify-center items-center font-semibold text-sm  ">
+                  Go for service{" "}
+                  <img
+                    src="images/arrow.png"
+                    alt=""
+                    className="w-6 h-6 font-bold  text-white  "
+                  />
                 </button>
               </label>
               <img
