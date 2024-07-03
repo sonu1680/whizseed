@@ -21,7 +21,7 @@ import NewsLetter from "../../components/newsLetter";
 
 const Refer = () => {
   return (
-    <div className="flex bg-white h-[100%] w-full justify-center items-center flex-col min-w-full ">
+    <div className="flex bg-white h-[100%] w-full justify-center items-center flex-col min-w-[1000px] ">
       <section
         className="h-[50vh] w-full bg-blue-500  hero flex flex-row justify-between items-center  mt-20  "
         style={{

@@ -13,17 +13,17 @@ import {
 const Footer = () => {
   return (
     <>
-      <footer className="footer items-center  bg-blue-800 text-neutral-content flex flex-col pb-8 min-w-full  ">
-        <div className="top w-full  flex justify-between items-center h-[40px] bg-blue-900 px-20 ">
-          <aside className="items-center grid-flow-col ">
-            <div className="flex flex-row gap-12 font-semibold ">
+      <footer className="footer items-center  bg-blue-800 text-neutral-content flex flex-col pb-8 min-w-[1000px]  ">
+        <div className="top w-full  flex justify-center items-center h-full bg-blue-900  flex-wrap ">
+          <aside className="items-center grid-flow-col flex justify-center ">
+            <div className="flex flex-row gap-6 sm:gap-12 font-semibold  justify-center items-center ">
               <div>About us </div>
               <div>Term of Service </div>
               <div>Privacy Policy </div>
               <div>Refund Policy </div>
             </div>
           </aside>
-          <nav className="grid-flow-col flex gap-6 md:place-self-center md:justify-self-end flex flex-wrap ">
+          <nav className="grid-flow-col flex gap-6 md:place-self-center md:justify-self-end  flex-wrap justify-center items-center  ">
             <a>
               <FontAwesomeIcon icon={faSquareFacebook} className="h-6 w-6" />
             </a>
@@ -42,7 +42,7 @@ const Footer = () => {
           </nav>
         </div>
 
-        <div className="bottom  w-full footer flex  lg:grid lg:grid-rows-1 lg:gap-10 justify-between  bg-blue-800 text-neutral-content px-20 gap-10 flex-wrap  ">
+        <div className="bottom  w-full footer text-sm    flex flex-row justify-center items-center lg:grid lg:grid-rows-1 lg:gap-10 sm:justify-between  bg-blue-800 text-neutral-content sm:px-20 gap-10 flex-wrap     ">
           <nav>
             <h6 className="footer-title text-yellow-400">START A BUSINESS</h6>
             <a className="link link-hover">Private Limited Company</a>
