@@ -3,7 +3,7 @@ import React from 'react'
 const Consult = () => {
   return (
     <>
-      <div className="inputContainer bg-white p-6 rounded-xl flex gap-4 flex-col h-[450px] w-96 justify-center items-center">
+      <div className="inputContainer bg-white p-6 rounded-xl flex gap-4 flex-col h-[450px] w-96 justify-center items-center border-2 border-gray-400 ">
                 <p className="text-blue-700  font-inter font-semibold text-center text-xl">
                   Consultation By Expert
                 </p>

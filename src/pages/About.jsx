@@ -41,14 +41,8 @@ const About = () => {
   return (
     <>
       <div className="flex bg-white h-[100%] w-full justify-center items-center flex-col min-w-[1000px] ">
-        <section
-          className="h-[50vh] w-full bg-blue-500  hero flex flex-row justify-between items-center  mt-20  "
-          style={{
-            backgroundImage:
-              "url(https://images.pexels.com/photos/5313173/pexels-photo-5313173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
-          }}
-        >
-          <div className="h-[50vh] w-full  hero flex flex-col  justify-center items-center bg-opacity-85 bg-blue-900  p-8 px-24">
+        <section className="h-[50vh] w-full bg-blue-600  hero flex flex-row justify-between items-center  mt-20  ">
+          <div className="h-[50vh] w-full  hero flex flex-col  justify-center items-center bg-opacity-85 bg-blue-600  p-8 px-24">
             <div className="texts flex flex-col justify-center items-center w-[500px] text-center gap-5">
               <p className="text-5xl font-inter font-semibold text-white ">
                 Who We Are
@@ -70,41 +64,32 @@ const About = () => {
                 Abouts Us
               </h1>
               <p className="text-black font-inter mt-4 text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Officia neque nulla consequatur itaque a? Animi, quas tempore
-                dignissimos hic corporis laborum unde id at assumenda commodi
-                quibusdam a voluptas soluta iusto facere illum ipsa culpa ipsum
-                repellat nam possimus quia recusandae. Quod officia cum aperiam
-                quidem mollitia quae aut, nisi, quisquam distinctio, quo
-                delectus. Corrupti architecto harum dicta voluptatibus vero
-                aliquid consequuntur enim! Vitae et nostrum voluptates
-                asperiores in unde quas odio non eaque, nulla blanditiis
-                veritatis adipisci dolorum iusto quibusdam, odit inventore.
-                Minima officiis aspernatur deserunt quidem atque, quis
-                distinctio quae et neque debitis necessitatibus molestias
-                veritatis, culpa corrupti. Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Ad reiciendis quia, qui adipisci
-                iure enim dolorem nihil molestiae doloribus quod vel maxime
-                eaque eius autem illum incidunt tenetur officia modi?
+                Whizseed is your go-to online hub for all things legal! We've
+                created a special platform that links top-notch lawyers with
+                business clients, making it easy for you to get the legal help
+                you need. Whether you have questions, need advice, or want to
+                discuss legal matters, we've got you covered. Plus, we like to
+                keep you in the loop with legal updates and news snippets. At
+                Whizseed, we've gathered a bunch of talented professionals who
+                specialize in various areas like Environmental issues, Business
+                Registrations, Government Licenses, Compliance, Tax filing, and
+                more. These experts are their own bosses, and no one at Whizseed
+                or any other member firm can speak for them or make commitments
+                on their behalf.
               </p>
 
               <p className="text-black font-inter mt-4 text-lg ">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Officia neque nulla consequatur itaque a? Animi, quas tempore
-                dignissimos hic corporis laborum unde id at assumenda commodi
-                quibusdam a voluptas soluta iusto facere illum ipsa culpa ipsum
-                repellat nam possimus quia recusandae. Quod officia cum aperiam
-                quidem mollitia quae aut, nisi, quisquam distinctio, quo
-                delectus. Corrupti architecto harum dicta voluptatibus vero
-                aliquid consequuntur enim! Vitae et nostrum voluptates
-                asperiores in unde quas odio non eaque, nulla blanditiis
-                veritatis adipisci dolorum iusto quibusdam, odit inventore.
-                Minima officiis aspernatur deserunt quidem atque, quis
-                distinctio quae et neque debitis necessitatibus molestias
-                veritatis, culpa corrupti. Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Ad reiciendis quia, qui adipisci
-                iure enim dolorem nihil molestiae doloribus quod vel maxime
-                eaque eius autem illum incidunt tenetur officia modi?
+                Just so you know, Whizseed isn't a law firm. When our lawyers
+                provide answers to your legal questions, they keep things simple
+                and easy to understand, but remember, these are not full legal
+                opinions. They're here to help you out of goodwill, but it
+                doesn't create a formal lawyer-client relationship. It's
+                important to note that the services we offer are not a
+                replacement for advice from a lawyer. One cool thing about
+                Whizseed is that clients like you post your queries or cases on
+                our platform, and you get to choose the lawyer you want to work
+                with. You're in the driver's seat when it comes to picking your
+                lawyer!
               </p>
             </div>
             <div className="right bg-green-800  w-5/12 aspect-video flex-col hidden md:inline-flex justify-center items-center ">
@@ -166,7 +151,6 @@ const About = () => {
           <Review />
           <NewsLetter />
         </section>
-
       </div>
     </>
   );

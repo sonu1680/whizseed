@@ -19,6 +19,7 @@ export default {
       },
       colors: {
         primary: "#ffffff",
+        yellowBright: "#d5eb34",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],

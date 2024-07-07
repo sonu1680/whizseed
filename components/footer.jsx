@@ -14,38 +14,59 @@ const Footer = () => {
   return (
     <>
       <footer className="footer items-center  bg-blue-800 text-neutral-content flex flex-col pb-8 min-w-[1000px]  ">
-        <div className="top w-full  flex justify-center items-center h-full bg-blue-900  flex-wrap ">
+        <div className="top w-full  flex justify-between items-center h-full bg-blue-900  flex-wrap px-20 ">
           <aside className="items-center grid-flow-col flex justify-center ">
-            <div className="flex flex-row gap-6 sm:gap-12 font-semibold  justify-center items-center ">
-              <div>About us </div>
-              <div>Term of Service </div>
-              <div>Privacy Policy </div>
+            <div className="flex flex-row gap-6 sm:gap-12 font-bold text-white  justify-center items-center ">
+              <div>
+                About us <span className="ml-2">|</span>{" "}
+              </div>
+              <div>
+                Term of Service <span className="ml-2">|</span>{" "}
+              </div>
+              <div>
+                Privacy Policy <span className="ml-2">|</span>{" "}
+              </div>
               <div>Refund Policy </div>
             </div>
           </aside>
           <nav className="grid-flow-col flex gap-6 md:place-self-center md:justify-self-end  flex-wrap justify-center items-center  ">
             <a>
-              <FontAwesomeIcon icon={faSquareFacebook} className="h-6 w-6" />
+              <FontAwesomeIcon
+                icon={faSquareFacebook}
+                className="h-6 w-6 text-white "
+              />
             </a>
             <a>
-              <FontAwesomeIcon icon={faSquareXTwitter} className="h-6 w-6" />
+              <FontAwesomeIcon
+                icon={faSquareXTwitter}
+                className="h-6 w-6 text-white"
+              />
             </a>
             <a>
-              <FontAwesomeIcon icon={faYoutube} className="h-6 w-6" />
+              <FontAwesomeIcon
+                icon={faYoutube}
+                className="h-6 w-6 text-white"
+              />
             </a>
             <a>
-              <FontAwesomeIcon icon={faLinkedin} className="h-6 w-6" />
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                className="h-6 w-6 text-white"
+              />
             </a>
             <a>
-              <FontAwesomeIcon icon={faInstagramSquare} className="h-6 w-6" />
+              <FontAwesomeIcon
+                icon={faInstagramSquare}
+                className="h-6 w-6 text-white"
+              />
             </a>
           </nav>
         </div>
 
-        <div className="bottom  w-full footer text-sm    flex flex-row justify-center items-center lg:grid lg:grid-rows-1 lg:gap-10 sm:justify-between  bg-blue-800 text-neutral-content sm:px-20 gap-10 flex-wrap     ">
-          <nav>
+        <div className="bottom text-white   w-full footer text-sm    flex flex-row justify-center items-center lg:grid lg:grid-rows-1 lg:gap-10 sm:justify-between  bg-blue-800  sm:px-20 gap-10 flex-wrap     ">
+          <nav className  >
             <h6 className="footer-title text-yellow-400">START A BUSINESS</h6>
-            <a className="link link-hover">Private Limited Company</a>
+            <a className="link link-hover  ">Private Limited Company</a>
             <a className="link link-hover">Limited Liability Partnership</a>
             <a className="link link-hover">One Person Company</a>
             <a className="link link-hover">Advertisement</a>

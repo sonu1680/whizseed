@@ -179,11 +179,17 @@ const Refer = () => {
                     How it Works
                   </p>
                   <p className="text-black">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Fuga, corporis.
+                    You get{" "}
+                    <span className="text-blue-600 font-bold ">₹250</span> Refer
+                    your friends to Whizseed and earn rewards when they purchase
+                    any of our services through your link.
                   </p>
                   <p className="text-black ">
-                    Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet done.
+                    Your friend will get{" "}
+                    <span className="text-blue-600 font-bold ">20%</span> Your
+                    friend will get{" "}
+                    <span className="text-blue-600 font-bold ">20%</span>{" "}
+                    discount on there 1st purchase
                   </p>
                 </div>
               </div>

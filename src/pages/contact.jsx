@@ -74,10 +74,9 @@ const Contact = () => {
                 Contact Us
               </h1>
               <p className="text-black font-inter mt-4 text-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-                veniam, esse soluta, tenetur commodi odit incidunt distinctio
-                voluptates repudiandae dolore, aperiam quas accusantium
-                recusandae ex corrupti harum aspernatur tempora? Modi?
+                At WhizSeed, we're dedicated to fueling your entrepreneurial
+                fire. Our services and expert guidance empower startups and
+                entrepreneurs across India to build, grow, and prosper.
               </p>
             </div>
             <div className="right w-5/12   flex flex-col  justify-center items-center ">

@@ -47,6 +47,18 @@ const Home = () => {
       image: "/images/epr.png",
       title: "EPR Authorization",
     },
+    {
+      image: "/images/partnership.png",
+      title: "Partnership Firm Registration",
+    },
+    {
+      image: "/images/incometax.png",
+      title: "Income Tax Return Filing",
+    },
+    {
+      image: "/images/trademark.png",
+      title: "Trademark Registartion",
+    },
   ];
   return (
     <>
@@ -101,7 +113,7 @@ const Home = () => {
               </label>
               <img
                 src="/images/userslist.png"
-                className="h-[40px] w-[220px] rounded-xl mt-[-20px] "
+                className="h-[55px] w-[300px] rounded-xl mt-[-20px] "
                 alt=""
               />
               <p className="text-black font-poppins font-medium font-inter mt-2">
@@ -156,24 +168,89 @@ const Home = () => {
         </section>
 
         {/* ////////////////////////////////////////////////// */}
-        <CompanyMarquee />
+        <section className=" flex  flex-col justify-center w-full h-[60vh] items-center bg-white">
+          <CompanyMarquee />
+
+          <div className="container w-11/12 h-24 bg-blue-600 rounded-lg flex flex-row   justify-evenly items-center">
+            <div className="container one w-72 h-20 gap-4  flex flex-row ">
+              <div className="left flex justify-center items-center ">
+                <img src="/images/wallet.png" alt="" className="w-14 h-10" />
+              </div>
+              <div className="right flex flex-col ">
+                <p className=" text-white font-semibold font-inter text-lg ">
+                  Reasonable
+                </p>
+                <p className=" text-white text-sm font-normal font-inter ">
+                  Lowest price with professional service delivery
+                </p>
+              </div>
+            </div>
+
+            <div className="container two w-72 h-20 gap-4  flex flex-row ">
+              <div className="left flex justify-center items-center ">
+                <img
+                  src="/images/supporthand.png"
+                  alt=""
+                  className="w-14 h-10"
+                />
+              </div>
+              <div className="right flex flex-col ">
+                <p className=" text-white font-semibold font-inter text-lg ">
+                  Support
+                </p>
+                <p className=" text-white text-sm font-normal font-inter ">
+                  Turn Around Time 99% of services will be delivered within
+                  timeline
+                </p>
+              </div>
+            </div>
+
+            <div className="container three w-72 h-20 gap-4  flex flex-row ">
+              <div className="left flex justify-center items-center ">
+                <img
+                  src="/images/ratinghand.png"
+                  alt=""
+                  className="w-14 h-10"
+                />
+              </div>
+              <div className="right flex flex-col ">
+                <p className=" text-white font-semibold font-inter text-lg ">
+                  4.8/5 on Google rating
+                </p>
+                <p className=" text-white text-sm font-normal font-inter ">
+                  99% of Customers rated us 5* in Google{" "}
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
         {/* 
 ///////////////////////////////////////// */}
 
-        <section className=" flex justify-center items-center bg-white">
-          <div className="container justify-between items-center flex bg-blue-600 rounded-2xl h-80 w-11/12 ">
-            <p className="text-3xl sm:text-5xl font-inter text-white font-semibold pl-20  ">
-              We Provide Best <br /> Quality Services
+        <section className=" flex  flex-col justify-center w-full h-[60vh] items-center bg-white">
+          <div className="title flex flex-row ">
+            <p className="text-2xl sm:text-5xl font-inter text-black font-semibold pl-20  ">
+              We Provide Best Quality
             </p>
 
-            <div className="innerBox flex flex-wrap gap-4  h-80 flex-1 px-2 overflow-auto py-4 justify-center ">
+            <p className="text-2xl sm:text-5xl font-inter text-blue-600 font-semibold ml-2 ">
+              Services
+            </p>
+          </div>
+
+          <div className="container justify-between items-center flex rounded-2xl h-80 w-11/12 flex-col mt-4 ">
+            <div className="innerBox flex flex-wrap gap-4  h-80 flex-1 px-2 overflow-auto py-4 bg-white justify-center ">
               {data.map((item, index) => (
                 <div
-                  className=" group box bg-white w-60 h-20 flex flex-row font-semibold justify-between items-center rounded-lg  pl-3 border-2 border-white hover:bg-transparent  transition ease-in-out delay-10  "
+                  className=" group box bg-blue-50 w-80 h-20 flex flex-row font-semibold justify-between items-center rounded-lg  pl-3 border-2 border-white hover:bg-blue-600  transition ease-in-out  duration-200 shadow-sm  "
                   key={index}
                 >
-                  <div className="flex flex-row justify-center items-center gap-1">
-                    <img src={item.image} alt="" className="h-10 w-10" />
+                  <div className="flex flex-row justify-center items-center  gap-1 ">
+                    <img
+                      src={item.image}
+                      alt=""
+                      className="h-10 w-10 text-red-200  "
+                    />
                     <p className="text-black text-sm font-inter ">
                       {item.title}
                     </p>
@@ -185,10 +262,10 @@ const Home = () => {
                   />
                 </div>
               ))}
-              <div className=" group box  w-60 h-20 flex flex-row  justify-center items-center rounded-lg gap-3 pl-3 bg-transparent border-2 border-white hover:bg-blue-950 transition ease-in delay-20 ">
+              <div className=" group box  w-80 h-20 flex flex-row  justify-center items-center rounded-lg gap-3 pl-3  border-2 bg-blue-600  border-white hover:bg-blue-900 transition ease-in delay-20 ">
                 <FontAwesomeIcon
                   icon={faCircleArrowRight}
-                  className="h-8 w-8 group-hover:h-10 group-hover:w-10 "
+                  className="h-8 w-8 group-hover:h-8 group-hover:w-8 "
                 />
                 <p className="text-white text-medium font-inter font  ">
                   See All Services
@@ -201,14 +278,14 @@ const Home = () => {
 ////////////////////////////////////////////////////////// */}
 
         <section className=" flex justify-center w-full items-center bg-white">
-          <div className="containers flex flex-row justify-center items-center w-11/12 h-[450px] bg-gray-100 mt-16 rounded-2xl ">
+          <div className="containers flex flex-row justify-center items-center w-11/12 h-[450px] bg-white border border-gray-400  mt-16 rounded-2xl ">
             <div className="left flex flex-col w-1/2 justify-center items-center  px-20  ">
-              <div className="flex flex-row text-center ">
-                <p className="text-4xl md:text-5xl font-inter font-bold text-black ">
-                  Why Choose?
-                  <p className="md:text-5xl text-4xl font-inter font-bold text-blue-600 ">
-                    Whizseed
-                  </p>
+              <div className="flex flex-row text-center  ">
+                <p className="text-4xl md:text-4xl font-inter font-bold text-black ">
+                  Why Choose
+                </p>
+                <p className="md:text-4xl text-4xl font-inter font-bold text-blue-600 ml-2 ">
+                  Whizseed
                 </p>
               </div>
               <span className="font-inter font-normal text-sm text-left  text-black mt-8">
@@ -219,12 +296,12 @@ const Home = () => {
               <img
                 src="/images/features.png"
                 alt=""
-                className="w-[500px] h-32"
+                className="w-[700px] h-28"
               />
             </div>
 
             <div className="right w-1/2 flex    justify-center items-center ">
-              <div className="box h-[400px] w-[550px] bg-white  rounded-3xl p-6 flex flex-col  gap-y-14 shadow-md shadow-gray-400 hover:shadow-[rgba(0,0,255,0.1)_0px_10px_1px_0px]   ">
+              <div className="box h-[400px] w-[550px] bg-white  rounded-3xl p-6 flex flex-col  gap-y-14    ">
                 <div className="title flex flex-row  h-8 w-full justify-start ">
                   <img
                     src="/images/correct.png"
@@ -295,21 +372,35 @@ const Home = () => {
         {/* 
 /////////////////////////////////////////// */}
 
-        <section className=" flex justify-center w-full items-center bg-white flex-col ">
-          <div className="container h-[450px] w-11/12  mt-10 rounded-3xl p-6 ">
+        <section className=" flex justify-center w-full h-[170vh] items-center bg-white flex-col relative ">
+          <div className="container h-[135vh] w-11/12  mt-10 rounded-3xl  bg-white flex flex-col justify-start  items-center p-6 ">
+            <div className="container flex flex-col justify-start items-center ">
+              <p className="text-black text-5xl font-inter font-semibold">
+                We <span className="text-blue-600">love to hear</span> from you
+              </p>
+              <span className=" text-black font-inter font-normal mt-6 ">
+                WHIZSEED is the ultimate platform for aspiring entrepreneurs and
+                startups. You can
+              </span>
+              <span className=" text-black font-inter font-normal  ">
+                streamline your startup journey from ideation to execution.
+              </span>
+            </div>
             <img
-              src="/images/global.png"
+              src="/images/arrow2.png"
               alt=""
-              className="w-full h-full rounded-3xl "
+              className="absolute top-28 left-[72%]     "
             />
+            <img src="/images/flags.png" alt="" className="mt-4" />
+            <img src="/images/map.png" alt="" className="mt-14  " />
           </div>
 
-          <div className="container h-[200px] w-11/12  mt-10 rounded-3xl p-6 bg-gray-100 flex flex-row  px-20">
+          <div className="container h-[200px] w-11/12  mt-10 rounded-3xl p-6 bg-gray-100 flex flex-row  px-20 hover:shadow-md hover:shadow-gray-400 transition-ease-in-out duration-100 ">
             <div className="left  w-3/4 pl-16 ">
               <p className="text-black font-inter font-semibold text-3xl">
                 100+ Companies per Month choose us Are you next startup?
               </p>
-              <button className="bg-blue-700 rounded-full p-2 px-8 mt-4 text-white font-inter">
+              <button className="bg-blue-700 rounded-full p-2 px-10 py-[11px] mt-4 text-white font-inter font-semibold hover:bg-white border-2 border-blue-600 hover:text-blue-600 ">
                 Get Started
               </button>
             </div>
