@@ -7,7 +7,7 @@ import {
 
 const Review = () => {
   const reviewData = [
-    { title: "Sonu Pandit" },
+    { title: "Sonu " },
     { title: "Sonu Pandit" },
     { title: "Sonu Pandit" },
     { title: "Sonu Pandit" },
@@ -32,7 +32,7 @@ const Review = () => {
           >
             <div className="heading w-full h-20 flex flex-row justify-between p-2">
               <div className="flex flex-col justify-center items-center mt-10">
-                <p className="text-lg font-semibold text-black">Sonu Pandit</p>
+                <p className="text-lg font-semibold text-black">Yash Barjo</p>
                 <img
                   src="images/rating.png"
                   alt=""
@@ -60,7 +60,7 @@ const Review = () => {
               <div className="heading w-full h-20 flex flex-row justify-between p-2 bg-white ">
                 <div className="flex flex-col justify-center items-center mt-10">
                   <p className="text-lg font-semibold text-black">
-                    Sonu Pandit
+                    Yash Barjo 
                   </p>
                   <img
                     src="images/rating.png"

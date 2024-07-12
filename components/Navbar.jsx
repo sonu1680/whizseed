@@ -3,7 +3,7 @@ import logo from "/images/logo.png";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar=() =>{
   return (
@@ -47,26 +47,80 @@ const Navbar=() =>{
             </li>
           </ul>
         </div>
-        <NavLink to="/" className="btn btn-ghost text-xl h-full w-full bg-transparent hover:bg-white  ">
-          <img src={logo} alt="logo" className="h-18 w-32" />
-        </NavLink> 
+        <NavLink
+          to="/"
+          className="btn btn-ghost text-xl h-full w-full bg-transparent hover:bg-white  "
+        >
+          <img src={logo} alt="logo" className="h-[66.9px] w-[128px]" />
+        </NavLink>
       </div>
       <div className="navbar-center hidden lg:flex  ">
         <ul className="menu menu-horizontal px-1 text-black font-semibold text-xl gap-5 ">
-          <li>
-            <NavLink to="/Start-Up">Start-Up</NavLink>
+          <li className=" flex flex-row">
+            <details>
+              <summary>Start-Up</summary>
+              <ul className="bg-white rounded-t-none p-2">
+                <li>
+                  <NavLink to="/Start-Up">Start-Up</NavLink>
+                </li>
+                <li>
+                  <a>Link </a>
+                </li>
+              </ul>
+            </details>
           </li>
           <li>
-            <NavLink to="/Licence">Licence</NavLink>
+            <details>
+              <summary>Licence</summary>
+              <ul className="bg-white rounded-t-none p-2">
+                <li>
+                  <NavLink to="/Licence">Licence</NavLink>{" "}
+                </li>
+                <li>
+                  <a>Link </a>
+                </li>
+              </ul>
+            </details>
           </li>
           <li>
-            <NavLink to="/Tax">Tax</NavLink>
+            <details>
+              <summary>Tax</summary>
+              <ul className="bg-white rounded-t-none p-2">
+                <li>
+                  <NavLink to="/Tax">Tax</NavLink>
+                </li>
+                <li>
+                  <a>Link </a>
+                </li>
+              </ul>
+            </details>
+          </li>
+
+          <li>
+            <details>
+              <summary>Regulatory</summary>
+              <ul className="bg-white rounded-t-none p-2">
+                <li>
+                  <NavLink to="/Regulatory">Regulatory</NavLink>{" "}
+                </li>
+                <li>
+                  <a>Link </a>
+                </li>
+              </ul>
+            </details>
           </li>
           <li>
-            <NavLink to="/Regulatory">Regulatory</NavLink>
-          </li>
-          <li>
-            <NavLink to="/Environmental">Environmental</NavLink>
+            <details>
+              <summary>Environmental</summary>
+              <ul className="bg-white rounded-t-none p-2">
+                <li>
+                  <NavLink to="/Environmental">Environmental</NavLink>
+                </li>
+                <li>
+                  <a>Link </a>
+                </li>
+              </ul>
+            </details>
           </li>
         </ul>
       </div>
@@ -99,6 +153,10 @@ const Navbar=() =>{
             icon={faPhone}
             className="h-4 w-4  transition ease-in-out delay-50     duration-300 group-hover:text-blue-600"
           />
+        </a>
+
+        <a className="btn group hover:bg-transparent   bg-white   text-black border-none hidden lg:inline-flex  ">
+          <FontAwesomeIcon icon={faBars} className="h-8 w-8  " />
         </a>
       </div>
     </div>

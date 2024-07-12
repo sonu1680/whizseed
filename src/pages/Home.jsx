@@ -227,7 +227,7 @@ const Home = () => {
         {/* 
 ///////////////////////////////////////// */}
 
-        <section className=" flex  flex-col justify-center w-full h-[60vh] items-center bg-white">
+        <section className=" flex  flex-col justify-center w-full h-full items-center bg-white">
           <div className="title flex flex-row ">
             <p className="text-2xl sm:text-5xl font-inter text-black font-semibold pl-20  ">
               We Provide Best Quality
@@ -238,8 +238,8 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="container justify-between items-center flex rounded-2xl h-80 w-11/12 flex-col mt-4 ">
-            <div className="innerBox flex flex-wrap gap-4  h-80 flex-1 px-2 overflow-auto py-4 bg-white justify-center ">
+          <div className="container justify-between items-center flex rounded-2xl h-full w-11/12 flex-col mt-4  ">
+            <div className="innerBox flex flex-wrap gap-4  h-full flex-1 px-2  py-4 bg-white justify-center ">
               {data.map((item, index) => (
                 <div
                   className=" group box bg-blue-50 w-80 h-20 flex flex-row font-semibold justify-between items-center rounded-lg  pl-3 border-2 border-white hover:bg-blue-600  transition ease-in-out  duration-200 shadow-sm  "
