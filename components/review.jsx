@@ -24,10 +24,10 @@ const Review = () => {
         </div>
       </div>
 
-      <div className="container w-11/12 mt-10 rounded-3xl p-6   flex flex-col md:flex-row justify-center items-center flex-wrap gap-8 px-4 md:px-20">
+      <div className="container w-[95%] mt-10 rounded-3xl p-6   flex flex-col md:flex-row justify-center items-center flex-wrap gap-8 px-4 md:px-20">
         {reviewData.map((item, index) => (
           <div
-            className="reviewbox w-auto lg:w-96 lg:h-80 h-96 bg-gray-100 rounded-2xl p-2  hidden md:inline-block shadow-2xl "
+            className="reviewbox w-auto lg:w-[400px] lg:h-80 h-96 bg-gray-50 rounded-2xl p-2  hidden md:inline-block  "
             key={index}
           >
             <div className="heading w-full h-20 flex flex-row justify-between p-2">
@@ -43,7 +43,7 @@ const Review = () => {
                 <img src="/images/google.png" alt="" className="w-8 h-8" />
               </div>
             </div>
-            <p className="px-4 text-black font-inter text-md">
+            <p className="px-4 text-black font-inter font-normal text-md leading-relaxed ">
               Recently, I partnered with a friend to launch our business, and we
               needed help registering it as a Partnership Firm. Whizseed made
               the entire process incredibly smooth. They were professional,
